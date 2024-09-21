@@ -2,40 +2,55 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Mi portfolio</title>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about_me.html">About me</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="resume_cv.html">Resume/CV</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <ul id="menu">
+                <li id="personal"> <span style="color: white;">Portfolio</span> Personal</li>
+                <li id="inicio"><a href="index.html">Inicio</a></li>
+                <li id="sobremi"><a href="about_me.html">Sobre mi</a></li>
+                <li id="servicios"><a href="services.html">Servicios</a></li>
+                <li id="contacto"><a href="contact.html">Contacto</a></li>
             </ul>
         </nav>
     </header>  
     <main>
-        <article>
-            <h1>Home</h1>
-            <section>
-                <h2>Bienvenidos</h2>
-                <p>¡Hola! Mi nombre es Sacha y soy estudiante de Licenciatura en gestión de tecnología de la información en UADE.</p>
-            </section>
-            <section>
-                <h2></h2>
-                <p>Soy un apasionado de la informática, con un enfoque en el desarrollo de software. Estoy dando mis primeros pasos en este apasionante mundo, y he adquirido habilidades en programación con C y Python, diseño web utilizando HTML, CSS, y Java, así como en testing de aplicaciones (QA).</p>
-            </section>
-            <div>
-                <img src="img/foto.jpg" alt="Sacha Tarulli" width="200" height="250">
+        <div class="contenedor">
+            <div class="hijo">
+                <div>
+                    <div>
+                        <h2 class="welcome">Bienvenidos</h2>
+                    </div>
+                    <div>
+                        <p class="texto">¡Hola! Mi nombre es <span style="color: #eae656;">Sacha</span> y soy estudiante de Licenciatura en Gestión de Tecnología de la Información en UADE.</p>
+                    </div>
+                    <div>
+                        <img src="img/foto.jpeg" class="foto" alt="Sacha Tarulli">
+                    </div>
+                </div>
             </div>
-        </article>
+        </div>
     </main>
+    <footer>
+        <div class="contactame">
+            <p>Contactame</p>
+        </div>
+        <div class="redessociales">
+            <div id="whatsapp">
+                <a href="tel:1136818579"><img src="img/whatsapp.png"/></a>
+            </div>
+            <div>
+                <a id="gmail" href="mailto:starulli@uade.edu.ar"><img src="img/gmail.png"/></a>
+            </div>
+            <div>
+                <a id="linkedin" href="www.linkedin.com/in/sachatarulli" target="_blank"><img src="img/linkedin.png"/></a>
+            </div>
+        </div>
+    </footer>
 </body>
-<footer>
-    <p>Telefono: 11-3681-8579 &nbsp&nbsp&nbsp&nbsp<a href="mailto:starulli@uade.edu.ar">starulli@uade.edu.ar</a> &nbsp&nbsp&nbsp&nbsp<a href="www.linkedin.com/in/sachatarulli" target="_blank">Linkedin</a></p>
-</footer>
 </html>

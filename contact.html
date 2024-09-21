@@ -3,42 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Mi portfolio</title>
 </head>
 <body>
-  <header>
-      <nav>
-          <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about_me.html">About me</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="resume_cv.html">Resume/CV</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="contact.html">Contact</a></li>
-          </ul>
-      </nav>
-  </header>  
-  <main>
-      <article>
-          <h1>Contact</h1>
-          <section>
-              <form>
-                <div><label>Tu Nombre</label><br><input type="text"></div>
-                <div><label>Tu Email</label><br><input type="email"></div>
-                <div><label>Asunto</label><br><input type="text"></div>
-                <div><label>Mensaje</label><br><textarea rows="10"></textarea></div>
-                <div><input type="submit" value="Enviar"></div>
-              </form>
-          </section>
-          <section>
-              <h2>Datos de contacto</h2>
-              <p>Email: <a href="mailto:starulli@uade.edu.ar">starulli@uade.edu.ar</a></p>
-              <p>Telefono: 11-3681-8579</p>
-              <p>Linkedin: <a href="www.linkedin.com/in/sachatarulli" target="_blank">www.linkedin.com/in/sachatarulli</a></p>
-          </section>
-      </article>
-  </main>
-</body>
+    <header>
+        <nav>
+            <ul id="menu">
+                <li id="personal"> <span style="color: white;">Portfolio</span>Personal</a></li>
+                <li id="inicio"><a href="index.html">Inicio</a></li>
+                <li id="sobremi"><a href="about_me.html">Sobre mi</a></li>
+                <li id="servicios"><a href="services.html">Servicios</a></li>
+                <li id="contacto"><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>  
+    <main>
+        <article>
+            <h1>Contacto</h1>
+            <section>
+                <form>      
+                  <input name="nombre" type="text" class="feedback-input" placeholder="Tu Nombre" />   
+                  <input name="email" type="text" class="feedback-input" placeholder="Tu Email" />
+                  <input name="asunto" type="text" class="feedback-input" placeholder="Asunto" />
+                  <textarea name="text" class="feedback-input" placeholder="Mensaje"></textarea>
+                  <input type="submit" value="ENVIAR"/>
+                </form>
+            </section>
+        </article>
+    </main>
 <footer>
+    <div class="contactame">
+        <p>Contactame</p>
+    </div>
+    <div class="redessociales">
+        <div id="whatsapp">
+            <a href="tel:1136818579"><img src="img/whatsapp.png"/></a>
+        </div>
+        <div>
+            <a id="gmail" href="mailto:starulli@uade.edu.ar"><img src="img/gmail.png"/></a>
+        </div>
+        <div>
+            <a id="linkedin" href="www.linkedin.com/in/sachatarulli" target="_blank"><img src="img/linkedin.png"/></a>
+        </div>
+    </div>
 </footer>
+</body>
 </html>

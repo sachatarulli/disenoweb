@@ -3,46 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Mi portfolio</title>
 </head>
 <body>
-  <header>
-      <nav>
-          <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about_me.html">About me</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="resume_cv.html">Resume/CV</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="contact.html">Contact</a></li>
-          </ul>
-      </nav>
-  </header>  
-  <main>
-      <article>
-          <h1>About me</h1>
-          <section>
-              <h2>Sobre mi</h2>
-              <p>Soy un apasionado de la informática, con un enfoque en el desarrollo de software. Actualmente estoy estudiando Licenciatura en gestión de tecnología de la información en UADE. </p>
-            </section>
-            <section>
-                <h2>Formación académica</h2>
-                <ul>
-                    <li><p>Tecnicatura en electricidad con orientación a electrónica industrial - Enet N°6, 2005 - 2009 </p></li>
-                    <li><p>Armado y reparación de pc. - UTN, 2012</p></li>
-                    <li><p>Licenciatura en Gestión de la Tecnología de la Información - UADE, 2014 - Actualmente</p></li>
-                </ul>
-            </section>
-          <section>
-              <h2>Filosofía personal</h2>
-              <p>Mi objetivo profesional es convertirme en un desarrollador de software altamente capacitado, capaz de enfrentar desafíos complejos y contribuir a proyectos innovadores que tengan un impacto positivo en la sociedad. Me apasiona la informática, y estoy comprometido con el aprendizaje continuo, explorando constantemente nuevas tecnologías y herramientas para perfeccionar mis habilidades.</p>
-              <p>Creo firmemente en la filosofía de trabajo basada en la calidad y la colaboración. A lo largo de mi formación, he aprendido la importancia de trabajar en equipo y cómo transformar un proyecto al promover la adaptabilidad, la eficiencia y la entrega continua de valor.</p>
-              <p>Valoro la transparencia, la comunicación efectiva y el trabajo en equipo, elementos clave en cualquier entorno ágil, y creo que estas prácticas no solo mejoran el proceso de desarrollo, sino que también contribuyen a la creación de productos de alta calidad.</p>
-          </section>
-      </article>
-  </main>
+    <header>
+        <nav>
+            <ul id="menu">
+                <li id="personal"> <span style="color: white;">Portfolio</span>Personal</a></li>
+                <li id="inicio"><a href="index.html">Inicio</a></li>
+                <li id="sobremi"><a href="about_me.html">Sobre mi</a></li>
+                <li id="servicios"><a href="services.html">Servicios</a></li>
+                <li id="contacto"><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contenedordoble">
+            <div class="hijo_sobremi">
+                <div>
+                    <div>
+                        <h2 style="color: #eae656;">Sobre mi</h2>
+                    </div>
+                    <div class="filo_texto">
+                        <p>Soy un apasionado de la informática, con un enfoque en el desarrollo de software. Actualmente estoy estudiando Licenciatura en Gestión de Tecnología de la Información en UADE, donde profundizo mis conocimientos en áreas como sistemas operativos, redes y bases de datos.</p>
+                        <p>Si queres conocer más detalles sobre mi trayectoria, te invito a descargar mi CV <span><a href="https://docs.google.com/document/d/1YFlkpbN-SAHdK8EhQH7ZnePMNe7lhr6SDY4awrJfm9w/edit?usp=sharing">Aquí.</a></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="hijo_sobremi">
+                <div>
+                    <div>
+                        <h2 style="color: #eae656;">Experiencia</h2>
+                    </div>
+                    <div class="filo_texto">
+                        <p>He trabajado en proyectos de desarrollo de software, aplicando lenguajes como C y Python, y he participado en el diseño y desarrollo de páginas web con HTML, CSS y JavaScript.</p>
+                        <p>También he colaborado en el área de testing de aplicaciones, asegurando la calidad del software mediante la implementación de pruebas de QA.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor_filo">
+            <div class="hijo_filo">
+                <div style="color: #eae656;">
+                    <h2 >Filosofía personal</h2>
+                </div>
+                <div class="filo_texto">
+                    <p>Mi objetivo profesional es convertirme en un desarrollador de software altamente capacitado, capaz de enfrentar desafíos complejos.</p>
+                    <p>Creo firmemente en la filosofía de trabajo basada en la calidad y la colaboración.</p>
+                    <p>Valoro la transparencia, la comunicación efectiva y el trabajo en equipo, elementos clave en cualquier entorno ágil, y creo que estas prácticas no solo mejoran el proceso de desarrollo, sino que también contribuyen a la creación de productos de alta calidad.</p>
+                </div>
+            </div>
+        </div>
+        </main>
+    </main>
 </body>
 <footer>
-    <p>Telefono: 11-3681-8579 &nbsp&nbsp&nbsp&nbsp<a href="mailto:starulli@uade.edu.ar">starulli@uade.edu.ar</a> &nbsp&nbsp&nbsp&nbsp<a href="www.linkedin.com/in/sachatarulli" target="_blank">Linkedin</a></p>
+    <div class="contactame">
+        <p>Contactame</p>
+    </div>
+    <div class="redessociales">
+        <div id="whatsapp">
+            <a href="tel:1136818579"><img src="img/whatsapp.png"/></a>
+        </div>
+        <div>
+            <a id="gmail" href="mailto:starulli@uade.edu.ar"><img src="img/gmail.png"/></a>
+        </div>
+        <div>
+            <a id="linkedin" href="www.linkedin.com/in/sachatarulli" target="_blank"><img src="img/linkedin.png"/></a>
+        </div>
+    </div>
 </footer>
 </html>
