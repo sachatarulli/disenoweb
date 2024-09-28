@@ -10,9 +10,9 @@ html {
 body {
   background-image: url("img/Rectangle\ 3.png");
   background-size: 100%;
-  min-height: 100vh; 
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
   
 header {
@@ -97,6 +97,7 @@ nav li a {
 nav li:hover {
   background: #08830e;
   color: white;
+  border-radius: 5%;
 }
   
   
@@ -116,7 +117,13 @@ nav li:hover {
 }
   
 .contenedor {
-  height: 100%;
+  padding: 20px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorindex {
   padding: 20px;
   margin: 50px auto;
   display: flex;
@@ -125,6 +132,14 @@ nav li:hover {
 }
   
 .hijo {
+  background-color: #061b24;
+  width: 450px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+}
+.hijoindex {
   background-color: #061b24;
   width: 450px;
   margin: 20px;
@@ -213,9 +228,17 @@ textarea {
   
 .contenedordoble {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 2%;
+}
+.contenedordobles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  height: 100%;
 }
   
 .contenedor_sobremi {
@@ -245,12 +268,17 @@ textarea {
 .contenedor_filo {
   width: 70%;
   padding: 20px;
-  margin: 50px auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-  
+.contenedoraboutme
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .hijo_filo {
   background-color: #061b24;
   margin: 20px;
@@ -261,15 +289,15 @@ textarea {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: large;
 }
+.filo_texto
+{
+  padding-top: 5px;
+}
   
 .filo_texto p {
   padding: 5px;
 }
 
-.filo_texto ul {
-  list-style: none;
-  padding-top: 5px;
-}
 
 span a {
   color: #eae656;
@@ -303,7 +331,7 @@ span a {
   }
 }
   
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   nav ul {
     flex-direction: column;
     align-items: center;
@@ -342,6 +370,11 @@ span a {
   footer {
     height: auto;
     padding: 10px;
+  }
+  .contenedordobles
+  {
+    display: flex;
+    flex-direction: column;
   }
 }
   
